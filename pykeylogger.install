@@ -1,0 +1,7 @@
+post_install() {
+  echo "Copy /usr/share/pykeylogger/pykeylogger.ini to ~/.pykeylogger.ini or similar and edit the Log Directory to point somewhere you have write access such as /home/user/.pykeylogger/. Then run pykeylogger -c ~/.pykeylogger.ini"
+}
+
+post_upgrade() {
+  post_install
+}
